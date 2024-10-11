@@ -47,17 +47,15 @@ $ cd conexa-api
 
 ## Configurar variables de entorno
 
-Asegurarse que la configuracion del archivo .env sea la correcta:
+Asegurarse que la configuracion de las variables de entorno en el docker-compose sea la correcta:
 
 ```bash
 SERVER_PORT=3000
-
 DB_HOST=db
 DB_PORT=5432
 DB_USER=conexa_user
 DB_PASSWORD=secretpassword
 DB_NAME=conexa_db
-
 JWT_SECRETPW=jwtpassword
 ```
 
