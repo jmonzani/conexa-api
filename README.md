@@ -66,7 +66,7 @@ JWT_SECRETPW=jwtpassword
 El proyecto esta configurado para correr con docker, por lo que se puede levantar de manera sencilla.
 
 ```bash
-$ docker-compose up --build
+$ docker-compose up
 ```
 
 ## Detener los contenedores
