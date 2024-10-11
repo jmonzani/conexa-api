@@ -41,7 +41,7 @@ Este proyecto es una API construida con NestJS a modo de Challenge para Conexa. 
 Desde la consola, clonar el repositorio
 
 ```bash
-$ https://github.com/jmonzani/conexa-api.git
+$ git clone https://github.com/jmonzani/conexa-api.git
 $ cd conexa-api
 ```
 
