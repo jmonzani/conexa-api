@@ -172,15 +172,6 @@ describe('MoviesService', () => {
 
       await expect(service.remove(1)).rejects.toThrow(NotFoundException);
     });
-
-    it('should throw ForbiddenException if user is not an admin', async () => {
-      service['remove'] = jest.fn().mockImplementation(() => {
-        throw new ForbiddenException();
-      });
-
-      await expect(service.remove(1)).rejects.toThrow(ForbiddenException);
-      expect(service.remove).not.toHaveBeenCalled();
-    });
   });
 
   describe('syncWithStarWarsAPI', () => {

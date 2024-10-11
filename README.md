@@ -26,36 +26,69 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Project setup
+# Conexa Challenge API
+
+Este proyecto es una API construida con NestJS a modo de Challenge para Conexa. Utiliza PostgreSQL como base de datos y Docker para facilitar su ejecución.
+
+## Requisitos Previos
+
+- [Docker](https://www.docker.com/get-started) y [Docker Compose](https://docs.docker.com/compose/install/) instalados.
+
+# Instrucciones para levantar el backend
+
+## 1. Clonar el repositorio
+
+Desde la consola, clonar el repositorio
 
 ```bash
-$ npm install
+$ https://github.com/jmonzani/conexa-api.git
+$ cd conexa-api
 ```
 
-## Compile and run the project
+## Configurar variables de entorno
+
+Asegurarse que la configuracion del archivo .env sea la correcta:
 
 ```bash
-# development
-$ npm run start
+SERVER_PORT=3000
 
-# watch mode
-$ npm run start:dev
+DB_HOST=db
+DB_PORT=5432
+DB_USER=conexa_user
+DB_PASSWORD=secretpassword
+DB_NAME=conexa_db
 
-# production mode
-$ npm run start:prod
+JWT_SECRETPW=jwtpassword
+```
+
+## Setup del proyecto
+
+El proyecto esta configurado para correr con docker, por lo que se puede levantar de manera sencilla.
+
+```bash
+$ docker-compose up --build
+```
+
+## Detener los contenedores
+
+Para detener los contenedores, ejecutar:
+
+```bash
+$ docker-compose down
+```
+
+## Acceder a la documentacion
+
+Este proyecto esta documentado con Swagger, se puede acceder a su documentacion mientras el proyecto este funcionando aqui:
+
+```bash
+$ http://localhost:3000/api
 ```
 
 ## Run tests
-
+Correr los tests
 ```bash
-# unit tests
 $ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ## Resources
