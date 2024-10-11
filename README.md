@@ -36,7 +36,7 @@ Este proyecto es una API construida con NestJS a modo de Challenge para Conexa. 
 
 # Instrucciones para levantar el backend
 
-## 1. Clonar el repositorio
+## Clonar el repositorio
 
 Desde la consola, clonar el repositorio
 
